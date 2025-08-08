@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title {
+  font-size: 3rem;
+  animation: glow 2s infinite alternate;
+}
+.subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 30px;
+}
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background: #fff;
+  color: #f4768e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fca3b7, 0 0 20px #fca3b7; }
+  to { text-shadow: 0 0 20px #fca3b7, 0 0 30px #f4768e; }
+}
